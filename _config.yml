@@ -39,6 +39,9 @@ facebook_image:
 google_analytics:
 comments: false
 
+# Theme
+theme: jekyll-whiteglass
+
 # Plugins
 plugins:
   - jekyll-archives
