@@ -8,7 +8,7 @@
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <title>
     
-      intzero's Blog &middot; 
+      gongpixin's Blog &middot; 
     
   </title>
 
@@ -63,23 +63,23 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="/" style="color:#333">intzero's Blog</a>
-        <p class="navbar-text">God does not play dice.</p>
+        <a class="navbar-brand" href="/" style="color:#333">gongpixin's Blog</a>
+        <!--<p class="navbar-text">God does not play dice.</p>-->
       </div>
 
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
-          <li class="nav-search">
-            <form class="navbar-form navbar-left" role="search" id="search-form">
-              <div class="input-group">
-                  <span class="input-group-btn">
-                    <button class="btn btn-default" type="button" style="color:#777">Go!</button>
-                  </span>
-                  <input type="text" id="search-input" class="form-control" placeholder="Search">
+          <!--<li class="nav-search">-->
+            <!--<form class="navbar-form navbar-left" role="search" id="search-form">-->
+              <!--<div class="input-group">-->
+                  <!--<span class="input-group-btn">-->
+                    <!--<button class="btn btn-default" type="submit" style="color:#777">Go!</button>-->
+                  <!--</span>-->
+                  <!--<input type="text" id="search-input" class="form-control" placeholder="Search">-->
                   
-              </div>
-            </form>
-          </li>
+              <!--</div>-->
+            <!--</form>-->
+          <!--</li>-->
           <li>
             <a href="/archives.html">Archives</a>
           </li>
@@ -105,143 +105,72 @@
       
       <article class="post-preview">
         <h1 class="post-title">
-          <a href="/coding4fun/comments-with-isso.html">搭建Isso评论服务</a>
+          <a href="/heartbeat.html">心跳包</a>
         </h1>
 
         <div class="post-info">
-          <span class="post-date">09 Aug 2017</span>
-           | 
-            <span class="fa fa-folder-open" aria-hidden="true">
-            
-              <a class="post-categories" href="/categories.html#coding4fun">coding4fun</a>
-            
-            </span>
+          <span class="post-date">26 Dec 2019</span>
           
-           | 
-            <span class="fa fa-tag" aria-hidden="true">
-            
-              <a class="post-tags" href="/tags.html#jekyll">jekyll</a>
-            
-              <a class="post-tags" href="/tags.html#blog">blog</a>
-            
-            </span>
           
         </div>
 
         <div class="post-excerpt">
-          <p>与其借助第三方服务天天担心挂，还不如将自己的服务器资源利用起来。<a href="https://posativ.org/isso/">Isso</a>就是自建评论系统的一种方式。（官网需要fq.）</p>
+          <p>可根据心跳包判断玩家是否在线</p>
 
-<h2 id="install-isso">Install Isso</h2>
+<p>一定时间（比如 60 秒）内未收到心跳包，可认为该玩家已离线</p>
 
-<p>测试自Ubuntu服务器。本来官网文档里没那么多戏，但是我一直报错。。又安了很多其它包。</p>
+<p>如果前后端通信方式采用的长连接，后端可主动断开离线玩家的连接，节省资源</p>
 
-<pre><code class="language-text">$ sudo apt-get install python3-dev
-$ sudo pip install isso
-$ sudo apt-get install sqlite3
+<p>玩家主动关闭程序时，前端可正常发送关闭连接信息，后端可感知</p>
 
-# 可能需要：
-$ sudo pip install werkzeug
-$ sudo apt-get install libffi-dev
-$ sudo pip install misaka
-</code></pre>
-
+<p>拔网线等原因导致的断线，前端无法正常发送关闭连接消息，后端不可感知，可通过心跳包来判断</p>
 
         </div>
 
         <div class="post-readmore">
-          <a class="read-more" href="/coding4fun/comments-with-isso.html">Read More</a>
+          <a class="read-more" href="/heartbeat.html">Read More</a>
         </div>
       </article>
       <hr />
       
       <article class="post-preview">
         <h1 class="post-title">
-          <a href="/coding4fun/multisite-setting.html">利用Apache进行多站点配置</a>
+          <a href="/cat1/cat2/my-first-post.html">This is my first post</a>
         </h1>
 
         <div class="post-info">
-          <span class="post-date">08 Aug 2017</span>
+          <span class="post-date">25 Dec 2019</span>
            | 
             <span class="fa fa-folder-open" aria-hidden="true">
             
-              <a class="post-categories" href="/categories.html#coding4fun">coding4fun</a>
+              <a class="post-categories" href="/categories.html#cat1">cat1</a>
+            
+              <a class="post-categories" href="/categories.html#cat2">cat2</a>
             
             </span>
           
            | 
             <span class="fa fa-tag" aria-hidden="true">
             
-              <a class="post-tags" href="/tags.html#jekyll">jekyll</a>
+              <a class="post-tags" href="/tags.html#tag1">tag1</a>
             
-              <a class="post-tags" href="/tags.html#blog">blog</a>
-            
-              <a class="post-tags" href="/tags.html#multisites">multisites</a>
+              <a class="post-tags" href="/tags.html#tag2">tag2</a>
             
             </span>
           
         </div>
 
         <div class="post-excerpt">
-          <p>用了静态网页之后，主机就空闲了，当初辛辛苦苦跟工信部折腾了好几个月连案都备好了。。总感觉特别亏（其实就是舍不得wordpress的搜索功能。。）转念一想，拿wp当图片上传服务也是不错啊，这样就省去找第三方图床了。</p>
+          <h1 id="this-is-an-h1">This is an H1</h1>
 
-<p>我的目标：</p>
+<h2 id="this-is-an-h2">This is an H2</h2>
 
-<ul>
-  <li>www.lszero.com 显示主页面。</li>
-  <li>blog.lszero.com 对应静态site。</li>
-  <li>wp.lszero.com 对应wordpress。</li>
-</ul>
-
-<p>我这里用的是apache来实现的，也可以用nginx。</p>
-
-<p>因为我的测试平台是Ubuntu，故跟网上的配置文件有些不一样。如网上说的apache配置文件<code class="highlighter-rouge">http.conf</code>，在我的平台下是<code class="highlighter-rouge">/etc/apache2/apache2.conf</code>。</p>
-
+<h6 id="this-is-an-h6">This is an H6</h6>
 
         </div>
 
         <div class="post-readmore">
-          <a class="read-more" href="/coding4fun/multisite-setting.html">Read More</a>
-        </div>
-      </article>
-      <hr />
-      
-      <article class="post-preview">
-        <h1 class="post-title">
-          <a href="/coding4fun/static-website-with-jekyll.html">从WordPress到静态网站</a>
-        </h1>
-
-        <div class="post-info">
-          <span class="post-date">01 Aug 2017</span>
-           | 
-            <span class="fa fa-folder-open" aria-hidden="true">
-            
-              <a class="post-categories" href="/categories.html#coding4fun">coding4fun</a>
-            
-            </span>
-          
-           | 
-            <span class="fa fa-tag" aria-hidden="true">
-            
-              <a class="post-tags" href="/tags.html#github">github</a>
-            
-              <a class="post-tags" href="/tags.html#jekyll">jekyll</a>
-            
-              <a class="post-tags" href="/tags.html#bootstrap">bootstrap</a>
-            
-            </span>
-          
-        </div>
-
-        <div class="post-excerpt">
-          <p>作为一个极简主义者，越来越受不了WordPress的臃肿。主要自己平时都是用Markdown来做记录，而WordPress支持的不是很好，另外有时写的md长文通过三方软件导出的html也不造放在wp的什么地方才合适，管理起来还不如几个静态页面来得方便。于是有了某天来个大整顿的想法。</p>
-
-<p>对前端只停留在css的我，花了整三天时间，从Hexo到Jekyll再到Bootstrap，以及各种markdown2html解析器…最后基本算是从头写了一个基于Jekyll的website theme 😓  在此记录了各种前端坑，自认为还算详细吧。</p>
-
-
-        </div>
-
-        <div class="post-readmore">
-          <a class="read-more" href="/coding4fun/static-website-with-jekyll.html">Read More</a>
+          <a class="read-more" href="/cat1/cat2/my-first-post.html">Read More</a>
         </div>
       </article>
       <hr />
@@ -271,46 +200,41 @@ $ sudo pip install misaka
     <div class="col-md-3 main-sidebar">
       <div class="sidebar-content" id="sidebar">
   <div class="author-avatar">
-    <img src="/assets/img/author_avatar.jpg" alt="lszero">
+    <img src="/assets/img/author_avatar.jpg?imageMogr2/auto-orient" alt="author_avatar.jpg">
   </div>
 
   <div class="brief-intro">
     <div class="author-name">
-      intzero
+      gongpixin
     </div>
     <div class="author-bio">
-      程序媛/小硕/外协/折腾/技术宅
-
+      
     </div>
   </div>
 
   <nav class="site-state">
     <div class="site-state-item">
       <a href="/archives.html">
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">2</span>
         <span>Posts</span>
       </a>
     </div>
     <div class="site-state-item">
       <a href="/categories.html">
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span>Categories</span>
       </a>
     </div>
     <div class="site-state-item">
       <a href="/tags.html">
-        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-count">2</span>
         <span>Tags</span>
       </a>
     </div>
   </nav>
 
   <div class="social-icons">
-    <a href="https://github.com/lszero" class="btn" title="Github" target="_blank"><i class="fa fa-fw fa-github fa-2x" aria-hidden="true"></i></a>
-    <a href="http://weibo.com/u/2313016370" class="btn" title="Weibo" target="_blank"><i class="fa fa-fw fa-weibo fa-2x" aria-hidden="true"></i></a>
-    <a href="https://www.zhihu.com/people/lszero" class="btn" title="Zhihu" target="_blank"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-stack-1x fa-inverse"><strong>知</strong></i></span></a>
-    <a href="https://twitter.com/_lszero" class="btn" title="Twitter" target="_blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
-    <a href="http://intzero.lofter.com/" class="btn" title="Lofter" target="_blank"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-stack-1x fa-inverse"><strong>L</strong></i></span></a>
+    <a href="https://github.com/gongpixin" class="btn" title="Github" target="_blank"><i class="fa fa-fw fa-github fa-2x" aria-hidden="true"></i></a>
   </div>
 
   <hr />
@@ -320,8 +244,13 @@ $ sudo pip install misaka
     <ul class="list-group">
     
       <li class="list-group-item">
-        <a href="/categories.html#coding4fun">coding4fun</a>
-        <span class="badge">3</span>
+        <a href="/categories.html#cat1">cat1</a>
+        <span class="badge">1</span>
+      </li>
+    
+      <li class="list-group-item">
+        <a href="/categories.html#cat2">cat2</a>
+        <span class="badge">1</span>
       </li>
     
     </ul>
@@ -334,27 +263,12 @@ $ sudo pip install misaka
     <ul class="list-group">
     
       <li class="list-group-item">
-        <a href="/tags.html#github"> github</a>
+        <a href="/tags.html#tag1"> tag1</a>
         <span class="badge">1</span>
       </li>
     
       <li class="list-group-item">
-        <a href="/tags.html#jekyll"> jekyll</a>
-        <span class="badge">3</span>
-      </li>
-    
-      <li class="list-group-item">
-        <a href="/tags.html#bootstrap"> bootstrap</a>
-        <span class="badge">1</span>
-      </li>
-    
-      <li class="list-group-item">
-        <a href="/tags.html#blog"> blog</a>
-        <span class="badge">2</span>
-      </li>
-    
-      <li class="list-group-item">
-        <a href="/tags.html#multisites"> multisites</a>
+        <a href="/tags.html#tag2"> tag2</a>
         <span class="badge">1</span>
       </li>
     
@@ -374,9 +288,11 @@ $ sudo pip install misaka
 
     <footer class="footer">
   <div class="copyright">
-      Copyright &copy; <time datetime="2018-01-01T15:12:42+08:00">2018</time> <a href="http://lszero.com">intzero</a> | Powered by <a href="https://github.com/jekyll/jekyll">Jekyll</a> | Designed by <a href="http://lszero.com">intzero</a>
+      <!--Copyright &copy; <time datetime="2020-01-15T19:09:00+08:00">2020</time> <a href="">gongpixin</a> | Powered by <a href="https://github.com/jekyll/jekyll">Jekyll</a>-->
+      &copy; gongpixin - Powered by <a href="https://jekyllrb.com">Jekyll</a>
   </div>
 </footer>
+
 
     <a href="#top" class="back-to-top">^</a>
 
@@ -391,7 +307,7 @@ $ sudo pip install misaka
 
     <script>$("#search-form").submit(function(event){
       var query = document.getElementById("search-input").value;
-      window.open("http://google.com/search?q=" + query + "%20site:" + "lszero.github.io");
+      window.open("http://google.com/search?q=" + query + "%20site:" + "");
     });</script>
   </body>
 </html>

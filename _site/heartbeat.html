@@ -8,7 +8,7 @@
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <title>
     
-      Categories &middot; gongpixin's Blog
+      心跳包 &middot; gongpixin's Blog
     
   </title>
 
@@ -100,49 +100,71 @@
 
   
     <div class="container">
-  <div class="row">
-    <div class="col-md-8 col-md-offset-2">
-      <h1>Categories</h1>
-      
-      <div class="archive-cloud categories-cloud">
-        
-          <a href="#cat1" title="cat1" rel="1">cat1 (1)</a>
-        
-          <a href="#cat2" title="cat2" rel="1">cat2 (1)</a>
-        
-      </div>
+  <div class="row-fluid main">
+    <div class="col-md-9 content">
+      <article class="post">
+        <h1 class="post-title">心跳包</h1>
 
-      <hr />
-
-      <div class="archive-posts-list category-posts-list">
-      
-        <span class="fa fa-book" aria-hidden="true" id="cat1">
-          <span class="text">cat1</span>
-        </span>
-
-        <ul class="posts-list">
-        
-          <li><a class="post-title" href="/cat1/cat2/my-first-post.html"><small class="post-date">2019-12-25</small>This is my first post</a></li>
+        <div class="post-info">
+          <span class="post-date">26 Dec 2019</span>
           
-        
-        </ul>
-      
-        <span class="fa fa-book" aria-hidden="true" id="cat2">
-          <span class="text">cat2</span>
-        </span>
-
-        <ul class="posts-list">
-        
-          <li><a class="post-title" href="/cat1/cat2/my-first-post.html"><small class="post-date">2019-12-25</small>This is my first post</a></li>
           
-        
-        </ul>
-      
-      </div>
+        </div>
+
+        <hr>
+        <div class="post-content">
+          <p>可根据心跳包判断玩家是否在线</p>
+
+<p>一定时间（比如 60 秒）内未收到心跳包，可认为该玩家已离线</p>
+
+<p>如果前后端通信方式采用的长连接，后端可主动断开离线玩家的连接，节省资源</p>
+
+<p>玩家主动关闭程序时，前端可正常发送关闭连接信息，后端可感知</p>
+
+<p>拔网线等原因导致的断线，前端无法正常发送关闭连接消息，后端不可感知，可通过心跳包来判断</p>
+
+        </div>
+        <br><br>
+      </article>
+
+      <!--<nav class="post-pagination">-->
+        <!---->
+        <!--<a href="/cat1/cat2/my-first-post.html" class="btn previous" title="This is my first post">&larr; This is my first post</a>-->
+        <!---->
+        <!---->
+      <!--</nav>-->
+
+      <!--<hr>-->
+
+      <!---->
+      <!--<aside class="related">-->
+        <!--<h3>Related Posts</h3>-->
+        <!--<ul class="related-posts">-->
+          <!---->
+            <!--<li>-->
+              <!--<a href="/cat1/cat2/my-first-post.html">-->
+                <!--This is my first post-->
+                <!--<small><time datetime="2019-12-25T00:00:00+08:00">25 Dec 2019</time></small>-->
+              <!--</a>-->
+            <!--</li>-->
+          <!---->
+        <!--</ul>-->
+      <!--</aside>-->
+      <!---->
+
+    </div>
+    
+    <div class="col-md-3 post-sidebar">
+      <div class="sidebar-content" id="sidebar">
+  <nav class="header-list-sidebar">
+    <ul id="sideNav" class="nav headers-sidenav">
+        <!-- code will be generated in TOC.js -->
+    </ul>
+  </nav>
+</div>
     </div>
   </div>
 </div>
-
 
 
     <footer class="footer">
