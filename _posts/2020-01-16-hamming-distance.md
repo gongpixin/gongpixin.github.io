@@ -13,6 +13,7 @@ meta:
 For calculating Hamming distance between two strings a and b, they must have equal length.
 Now given N different binary strings, please calculate the minimum Hamming distance between every pair of strings.
  
+
 ## Input
 
 The first line of the input is an integer T, the number of test cases.(0<T<=20)
@@ -21,10 +22,12 @@ the number of different binary strings. Then N lines followed, each of the next 
 Each character is '0'-'9' or 'A'-'F', it represents the hexadecimal code of the binary string. For example,
 the hexadecimal code "12345" represents binary string "00010010001101000101".
  
+
 ## Output
 
 For each test case, output the minimum Hamming distance between every pair of strings.
  
+
 ## Sample Input
 
 ```
@@ -33,12 +36,14 @@ For each test case, output the minimum Hamming distance between every pair of st
 4 12345 6789A BCDEF 0137F
 ```
 
+
 ## Sample Output
 
 ```
 6
 7
 ```
+
 
 ## 样例分析
 
@@ -48,6 +53,7 @@ For each test case, output the minimum Hamming distance between every pair of st
           0100 0110 0000 0110 0100
 6个'1'
 ```
+
 
 ## 代码
 
