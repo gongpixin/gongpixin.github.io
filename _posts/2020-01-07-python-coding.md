@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "python编码"
-categories:
+categories: python
 tags:
 author: "gongpixin"
 meta:
