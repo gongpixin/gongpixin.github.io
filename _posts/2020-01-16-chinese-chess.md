@@ -3,8 +3,6 @@ layout: post
 title: "中国象棋"
 categories:
 tags:
-author: "gongpixin"
-meta:
 ---
 
 红方棋盘从右向左纵向九条竖线 记为一到九路

@@ -1,10 +1,8 @@
 ---
 layout: post
 title: "约瑟夫环"
-categories: 算法
+categories:
 tags:
-author: "gongpixin"
-meta:
 ---
 
 n个人从1到n编号，1号开始从1开始报数，报到m的自杀，下个人重新从1开始报数，报到m的自杀...求最后存活的人。

@@ -1,10 +1,8 @@
 ---
 layout: post
-title: "hdu 4712 hamming distance（随机数法）"
-categories: 算法
+title: "hdu 4712 hamming distance(随机数法)"
+categories:
 tags:
-author: "gongpixin"
-meta:
 ---
  
 ## Problem Description

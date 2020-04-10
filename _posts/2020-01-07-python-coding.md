@@ -1,10 +1,8 @@
 ---
 layout: post
 title: "python编码"
-categories: python
+categories:
 tags:
-author: "gongpixin"
-meta:
 ---
 
 python默认ascii编码，若代码中有中文则会报错
